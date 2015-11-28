@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+h1, #buttons {
+    text-align: center;
+}
+#canvas {
+    background-color: SaddleBrown;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+</style>
+
+<head>
+<title>Nine Men's Morris</title>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="script/main.js"></script>
+<script src="script/board.js"></script>
+<script src="script/table.js"></script>
+<script>
+$(document).ready(readyFn);
+</script>
+</head>
+
+<body>
+<h1>Nine Men's Morris</h1>
+<div id="buttons">
+    <button id="initTable">Start New Game</button>
+    <button id="undo">Undo</button>
+    <br>
+    <br>
+</div>
+<canvas id="canvas" width="600" height="400"></canvas>
+<div id="idx"></div>
+<div id="tmp"></div>
+<div id="coord"></div>
+<table>
+    <tr>
+        <td valign="top">
+            <div id="coords"></div>
+        </td>
+        <td valign="top">
+            <div id="history"></div>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
+
+
